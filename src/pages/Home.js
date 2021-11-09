@@ -9,7 +9,7 @@ const Home = () => {
     const [objAsset, setObjAsset] = useState([]);
     const [obj, setObj] = useState([]);
     useEffect(() => {
-        const collections = ["shiny-rappers", "music-heroes", "kyoto-city", "cryptohiphopcrew"];
+        const collections = ["shiny-rappers", "music-heroes", "kyoto-city"];
         collections.forEach((collection) => {
 
             /***assets start fetch */
