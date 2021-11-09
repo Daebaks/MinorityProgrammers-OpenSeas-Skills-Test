@@ -30,7 +30,6 @@ const SingleAsset = () => {
                     tmp_curr_bid = parseInt((a.orders[0].current_price).substring(0, 2), 10) * 0.1 * 4562;
                     (a.orders[0].closing_date === null) ? tmp_bid_end = 'Open' : tmp_bid_end = a.orders[0].closing_date;
                 }
-
                 newAs = {
                     asset_logo_single: a.image_url,
                     asset_name_single: a.name,

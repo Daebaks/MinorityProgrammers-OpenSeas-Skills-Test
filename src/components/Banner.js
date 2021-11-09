@@ -11,7 +11,6 @@ const Banner = (props) => {
                     {props.banner_desc_a}
                 </div>
             </div>
-
         </>
     )
 }

@@ -12,25 +12,23 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar />
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/singlecollection/:collection_slug">
-              <SingleCollection />
-            </Route>
-            <Route path="/singleasset/:asset_token_address/:asset_token_id">
-              <SingleAsset />
-            </Route>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/singlecollection/:collection_slug">
+            <SingleCollection />
+          </Route>
+          <Route path="/singleasset/:asset_token_address/:asset_token_id">
+            <SingleAsset />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

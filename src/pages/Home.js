@@ -11,7 +11,6 @@ const Home = () => {
     useEffect(() => {
         const collections = ["shiny-rappers", "music-heroes", "kyoto-city"];
         collections.forEach((collection) => {
-
             /***assets start fetch */
             let newAsset;
             fetch(`https://api.opensea.io/api/v1/assets?collection=${collection}&limit=50`, {
@@ -78,6 +77,7 @@ const Home = () => {
                                 banner_title_a={'Collectibles'}
                                 banner_desc_a={'Verified NFT marketplace for music artists'}
                             />
+
                             <div className='cont-home-1'>
                                 <div className='top-collections'>Top Collection</div >
                                 <div className='button-home'>View All</div>
