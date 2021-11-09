@@ -515,7 +515,6 @@ box-sizing: border-box;
   font-weight: normal;
   font-size: 23.4139px;
   line-height: 103.5%;
-  /* or 24px */
   background-color: #000000;
   border-color: #00CC9B;
   display: flex;
@@ -545,8 +544,6 @@ cursor:pointer;
 left: 2.38%;
 right: 65%;
 top: 6.73%;
-/* bottom: 88.76%; */
-
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
@@ -736,34 +733,40 @@ border-radius: 9px;
 overflow: hidden;
 overflow-y: scroll;
 }
-
-
-
 .bid-preview {
   
   position: relative;
-  margin: 50px ;
+  margin: 6px ;
   background-color: rgb(59, 59, 58);
-  border-radius:25px;
-  /* height: px; */
-  
+  border-radius:15px;  
 }
 .list-bids{
   display:block;
+  position: relative;
 }
 .bid-img{
   position:relative;
+  left: 420px;
+  border-radius: 25px;
   
-  right: 250px;
-  border-radius: 40px;
+  max-width:180px;
+    max-height:180px;
+    box-shadow: 0px 3px 2px #00CC9B;
+      /* -webkit-box-shadow: 50px 50px 1px 3px 15px rgb(25, 181, 243); */
+        
 }
 
 .bid-details-user{
   font-family:Poppins;
   font-style:italic;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 15px;
+  line-height: 33px;
   text-align:left;
   color: #FFFFFF;
-  float: right;
+  position: absolute;
+  left: 30px;
+  top:21px;
+  border: solid #00CC9B; 
+  background-color: #141313;
+  border-radius: 10px;
 }

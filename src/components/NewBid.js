@@ -9,7 +9,7 @@ const NewBid = ({ bids }) => {
             <div className='list-bids'>
                 {bids.map(e => (
                     <div key={e.bid_id} className='bid-preview'>
-                        <img src={e.bid_asset_img} width="15%" height="24%" alt='' className='bid-img' />
+                        <img src={e.bid_asset_img} width="180" height="180" alt='' className='bid-img' />
                         <div className='bid-details-user'>
                             Asset: {e.bid_asset_name}<br />
                             Bid Amount: {e.bid_amount}<br />
