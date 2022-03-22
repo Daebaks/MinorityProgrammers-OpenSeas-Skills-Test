@@ -8,6 +8,13 @@ import logo from '../media/bannerHome.png'
 const Home = () => {
     const [objAsset, setObjAsset] = useState([]);
     const [obj, setObj] = useState([]);
+    const [order_by, setOrder_by] = useState('');
+
+    const arrange = (e) => {
+        console.log(e.target.value)
+
+    }
+
     useEffect(() => {
         const collections = ["shiny-rappers", "music-heroes", "kyoto-city"];
         collections.forEach((collection) => {
@@ -66,6 +73,7 @@ const Home = () => {
         });
     }, []);
 
+
     return (
         <>
             {(obj.length !== 0 && objAsset.length !== 0) ? <table className='wrap'>
@@ -104,7 +112,7 @@ const Home = () => {
 
                             <div className='cont-home-2'>
                                 <div className='collectibles'>Collectibles</div >
-                                <select name="cars" className='dropdown-h'>
+                                <select name="re-arrange" className='dropdown-h' onChange={arrange}>
                                     <option value="p">Popularity</option>
                                     <option value="c">Category</option>
                                     <option value="r">Recently added</option>
