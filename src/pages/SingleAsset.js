@@ -26,7 +26,8 @@ const SingleAsset = () => {
       .then((a) => {
         let tmp_curr_bid;
         let tmp_bid_end;
-        if (typeof a.orders[0] === 'undefined' || typeof a.orders[0] === null) {
+        console.log(a.orders);
+        if (a.orders === null) {
           tmp_curr_bid = '4562';
           tmp_bid_end = 'Open';
         } else {
